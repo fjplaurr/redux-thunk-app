@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.dragonPic {
+  height: 12rem;
+  animation: opac 3s, transl 3s;
+}
+
+body {
+  background-color: rgb(40, 40, 40);
+  color: rgb(220, 220, 220);
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+h1 {
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  color: rgb(220, 220, 220);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: rgb(220, 220, 220);
+  margin-bottom: 2rem;
+}
+
+.buttonsContainer {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@keyframes opac {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes transl {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media only screen and (max-width: 823px) {
+  .dragonPic {
+    height: 7rem;
+  }
+
+  #root {
+    margin: 3rem 0;
+  }
+
+  .intro {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  h3 {
+    margin-top: 0.5rem;
+  }
+
+  h1 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .buttonsContainer {
+    margin: 0.5rem 0;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+}

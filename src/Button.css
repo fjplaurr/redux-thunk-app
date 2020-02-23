@@ -1,0 +1,30 @@
+.but {
+  width: 15rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-weight: 600;
+  color: rgb(40, 40, 40);
+  box-shadow: 2px 2px 2px rgba(250, 250, 250, 0.25);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(255, 211, 141);
+  border-color: rgb(220, 220, 220);
+}
+
+.but-disabled {
+  background-color: rgba(250, 250, 250, 0.25);
+}
+
+@media only screen and (max-width: 823px) {
+  button {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    width: 12rem;
+  }
+}
